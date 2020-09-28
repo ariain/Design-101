@@ -10,7 +10,7 @@ const ModalWrapper = styled.div`
   height: 580px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background-color: ${props => props.theme.formElementBackground};
-  color: ${props => props.theme.formElementBackground};
+  color: ${props => props.theme.textOnFormElementBackground};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,14 +19,17 @@ const ModalWrapper = styled.div`
   border-radius: 2px;
 `;
 
-const SignUpHeader = styled.h3`
-  font-size: ${typeScale.header3};
+const SignUpHeader = styled.h2`
+  font-size: ${typeScale.header2};
+  margin: 16px 4px;
 `;
 
 const SignUpText = styled.p`
   font-size: ${typeScale.paragraph};
   max-width: 70%;
   text-align: center;
+  margin-bottom: 36px;
+  margin-top: 0;
 `;
 
 const CloseModalButton = styled.button`
