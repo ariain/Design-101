@@ -1,5 +1,5 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
-import { SignUpModal } from "./Modal";
+import { SignUpModal, SignInModal } from "./Modal";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 
@@ -20,5 +20,15 @@ Primary buttons are used as a call to action and indicate the most important act
 <Preview withToolbar>
   <Story name="SignUpModal">
     <SignUpModal showModal={boolean("Show Modal", true)} />
+  </Story>
+</Preview>
+
+## Primary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Preview withToolbar>
+  <Story name="SignInModal">
+    <SignInModal showModal={boolean("Show Modal", true)} />
   </Story>
 </Preview>

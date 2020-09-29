@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDom from "react-dom";
 import { ThemeProvider } from "styled-components";
-import { SignUpModal } from "./components";
+import { SignUpModal, SignInModal } from "./components";
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils";
 
 const App = () => {
@@ -37,10 +37,11 @@ const App = () => {
           height: "100vh",
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-around",
+          justifyContent: "space-around"
         }}
       >
-        <SignUpModal showModal={showModal} setShowModal={setShowModal} />
+        {/*<SignUpModal showModal={showModal} setShowModal={setShowModal} />*/}
+        <SignInModal showModal={true} />
       </div>
       <GlobalStyle />
     </ThemeProvider>
