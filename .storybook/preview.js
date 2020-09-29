@@ -10,6 +10,12 @@ addParameters({
       { name: "Defalut Theme", value: "#ffffff" },
       { name: "Dark Theme", value: "#1B3A4F" }
     ]
+  },
+  a11y: {
+    element: "#root",
+    config: {},
+    options: {},
+    manual: false
   }
 });
 
